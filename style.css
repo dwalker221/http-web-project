@@ -1,0 +1,72 @@
+
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #23466b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Navigation menu */
+nav {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+nav a:hover {
+    background-color: #557da3;
+}
+
+/* Main content */
+main {
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 20px;
+}
+
+/* Content sections */
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #23466b;
+}
+
+/* Links */
+a {
+    color: #245d91;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer a {
+    color: #a8d4ff;
+}
