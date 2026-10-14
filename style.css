@@ -70,3 +70,10 @@ footer {
 footer a {
     color: #a8d4ff;
 }
+
+
+/* Highlighted content section */
+.highlight {
+    background-color: #e8f1fa;
+    border-left: 4px solid #23466b;
+}
