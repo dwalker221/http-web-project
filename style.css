@@ -1,5 +1,5 @@
 
-/* General page styling */
+/* page styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -16,7 +16,7 @@ header {
     padding: 25px;
 }
 
-/* Navigation menu */
+/* menu */
 nav {
     background-color: #333;
     display: flex;
