@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTTP Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>HTTP Knowledge Quiz</h1>
+    <p>Test What You Know About HTTP</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="history.html">History</a>
+    <a href="how-it-works.html">How HTTP Works</a>
+    <a href="concepts.html">Key Concepts</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="references.html">References</a>
+    <a href="about.html">About Me</a>
+</nav>
+
+<main>
+    <section>
+        <h2>HTTP Quiz</h2>
+        <p>Choose one answer for each question.</p>
+
+        <form id="quizForm">
+            <h3>1. What does HTTP stand for?</h3>
+            <input type="radio" name="q1" value="a"> Hypertext Transfer Protocol<br>
+            <input type="radio" name="q1" value="b"> Hyperlink Text Program<br>
+            <input type="radio" name="q1" value="c"> High Transfer Technology<br>
+
+            <h3>2. What does a browser send to a server?</h3>
+            <input type="radio" name="q2" value="a"> A response<br>
+            <input type="radio" name="q2" value="b"> A request<br>
+            <input type="radio" name="q2" value="c"> A status code<br>
+
+            <h3>3. Which HTTP status code means success?</h3>
+            <input type="radio" name="q3" value="a"> 404<br>
+            <input type="radio" name="q3" value="b"> 500<br>
+            <input type="radio" name="q3" value="c"> 200<br>
+
+            <h3>4. Which HTTP version uses QUIC?</h3>
+            <input type="radio" name="q4" value="a"> HTTP/1.0<br>
+            <input type="radio" name="q4" value="b"> HTTP/3<br>
+            <input type="radio" name="q4" value="c"> HTTP/2<br>
+
+            <h3>5. What does HTTPS provide?</h3>
+            <input type="radio" name="q5" value="a"> Faster typing<br>
+            <input type="radio" name="q5" value="b"> More images<br>
+            <input type="radio" name="q5" value="c"> Encrypted communication<br>
+
+            <br>
+            <button type="submit">Submit Quiz</button>
+        </form>
+
+        <h2 id="result"></h2>
+    </section>
+</main>
+
+<footer>
+    <p>Created by DeMarco Walker | IT 3203</p>
+</footer>
+
+<script>
+document.getElementById("quizForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    let answers = ["a", "b", "c", "b", "c"];
+    let score = 0;
+
+    for (let i = 1; i <= 5; i++) {
+        let selected = document.querySelector('input[name="q' + i + '"]:checked');
+
+        if (selected && selected.value === answers[i - 1]) {
+            score++;
+        }
+    }
+
+    document.getElementById("result").textContent =
+        "Your Score: " + score + " out of 5";
+});
+</script>
+
+</body>
+</html>
