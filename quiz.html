@@ -69,9 +69,11 @@
 document.getElementById("quizForm").addEventListener("submit", function(event) {
     event.preventDefault();
 
+        // Correct answers for the five questions
     let answers = ["a", "b", "c", "b", "c"];
     let score = 0;
 
+        // Check each question and count correct answers
     for (let i = 1; i <= 5; i++) {
         let selected = document.querySelector('input[name="q' + i + '"]:checked');
 
@@ -80,6 +82,7 @@ document.getElementById("quizForm").addEventListener("submit", function(event) {
         }
     }
 
+        // Display the final score on the webpage
     document.getElementById("result").textContent =
         "Your Score: " + score + " out of 5";
 });
